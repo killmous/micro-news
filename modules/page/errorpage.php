@@ -11,7 +11,7 @@ class ErrorPage
 		$this->content = 
 '
 <div class="container">
-	<div>
+	<div class="errormain">
 		<h1>404 Error</h1>
 		<h2>Page not found</h2>
 	</div>

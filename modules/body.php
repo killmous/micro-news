@@ -27,7 +27,7 @@ class Body
 		}
 		else
 		{
-			switch( $headers( 'p' ) )
+			switch( $headers[ 'p' ] )
 			{
 			case 'home':
 				$home = new HomePage();
