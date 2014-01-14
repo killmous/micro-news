@@ -1,3 +1,6 @@
 #!/bin/bash
 
-python ../src/readWikipedia.py
+FILE="../media/War_And_Peace"
+cd ../bin
+#python readWikipedia.py $FILE".html"
+./backend $FILE".txt"

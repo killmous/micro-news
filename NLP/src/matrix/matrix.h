@@ -1,6 +1,7 @@
 #ifndef __MATRIX_H_
 #define __MATRIX_H_
 
+#include <cmath>
 #include <cstdio>
 #include <cstring>
 #include <string>

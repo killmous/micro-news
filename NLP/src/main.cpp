@@ -1,7 +1,6 @@
 #include <cstdio>
 #include <string>
 #include <fstream>
-#include <cmath>
 
 #include "matrix/matrix.h"
 
@@ -37,18 +36,21 @@ double sim(std::vector<int> one, std::vector<int> two)
 int main(int argc, char **argv)
 {
 	Matrix *mat = new Matrix();
-	std::ifstream fstr("../media/wikipedia.txt");
+	std::ifstream fstr((const char*) argv[1]);
 	std::string line;
 
+	printf("Reading...\n");
 	while(fstr.good())
 	{	
 		getline(fstr, line);
 		mat->addDocument(line);
 	}
 	printf("Read\n");
+	printf("Sorting...\n");
 	mat->sort();
 	printf("Sorted\n");
-	printf("%f\n", sim(mat->at("stop"), mat->at("go")));
+	mat->print();
+	printf("%f\n", sim(mat->at("hate"), mat->at("love")));
 	delete mat;
 	return 1;
 }

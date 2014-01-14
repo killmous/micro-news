@@ -11,7 +11,7 @@ CC          = g++
 CCFLAGS     = -c -g -w -O3 -std=c++0x
 LINKFLAGS   =
 
-TARGET = ../bin/readWikipedia
+TARGET = ../bin/backend
 
 all: $(TARGET)
 
