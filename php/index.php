@@ -3,8 +3,8 @@
         <?php
         ob_start();
         
-        require 'web/modules/header.php';
-        require 'web/modules/body.php';
+        require 'modules/header.php';
+        require 'modules/body.php';
         
         $header = new Header();
         echo $header->write();
