@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="../media/War_And_Peace"
-cd ../bin
+FILE="../media/wikipedia"
+
 #python readWikipedia.py $FILE".html"
 ./backend $FILE".txt"

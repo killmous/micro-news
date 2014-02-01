@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	mat->sort();
 	printf("Sorted\n");
 	mat->print();
-	printf("%f\n", sim(mat->at("hate"), mat->at("love")));
+	printf("%f\n", sim(mat->at("stalin"), mat->at("hitler")));
 	delete mat;
 	return 1;
 }

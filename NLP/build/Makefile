@@ -1,4 +1,4 @@
-BUILDDIR    = ../bin/
+BUILDDIR    = ./
 SOURCEDIR   = ../src/
 
 DIRS        = $(wildcard $(SOURCEDIR)*/)
@@ -11,7 +11,7 @@ CC          = g++
 CCFLAGS     = -c -g -w -O3 -std=c++0x
 LINKFLAGS   =
 
-TARGET = ../bin/backend
+TARGET = $(BUILDDIR)backend
 
 all: $(TARGET)
 
