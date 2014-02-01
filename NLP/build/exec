@@ -3,4 +3,4 @@
 FILE="../media/wikipedia"
 
 #python readWikipedia.py $FILE".html"
-./backend $FILE".txt"
+./backend $FILE".txt" "tony" "the"

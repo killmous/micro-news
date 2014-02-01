@@ -9,7 +9,12 @@ class HomePage
 	function __construct()
 	{
 		$this->content =
-'';
+'<div class="container">
+	<div class="jumbotron">
+		<p>I\'m a homepage</p>
+	</div>
+</div>
+';
 	}
 
 	function write()

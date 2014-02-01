@@ -39,18 +39,18 @@ int main(int argc, char **argv)
 	std::ifstream fstr((const char*) argv[1]);
 	std::string line;
 
-	printf("Reading...\n");
+//	printf("Reading...\n");
 	while(fstr.good())
 	{	
 		getline(fstr, line);
 		mat->addDocument(line);
 	}
-	printf("Read\n");
+	/* printf("Read\n");
 	printf("Sorting...\n");
 	mat->sort();
 	printf("Sorted\n");
-	mat->print();
-	printf("%f\n", sim(mat->at("stalin"), mat->at("hitler")));
+	mat->print(); */
+	printf("%f\n", sim(mat->at(argv[2]), mat->at(argv[3])));
 	delete mat;
 	return 1;
 }
