@@ -9,9 +9,14 @@ class HomePage
 	function __construct()
 	{
 		$this->content =
-'<div class="container">
+'<div class="container" style="padding-top: 5px;">
 	<div class="jumbotron">
-		<p>I\'m a homepage</p>
+		<h1>Enter two words</h1><br />
+		<form id="form" method="post">
+			<input class="form-control input-lg" type="text" Placeholder="Word 1" />
+			<input class="form-control input-lg" type="text" Placeholder="Word 2" />
+			<a class="btn btn-lg btn-primary" style="margin-top: 10px;">See Similarity</a>
+		</form>
 	</div>
 </div>
 ';

@@ -9,7 +9,7 @@ class Navbar
 	function __construct()
 	{
 		$this->content =
-'<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+'<div class="navbar navbar-inverse navbar-static-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="?p=home">Bootstrap</a>

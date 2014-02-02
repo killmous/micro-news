@@ -10,7 +10,7 @@ class Header
 	{
 		$this->content =
 '<head>
-	<title>Bootstrap is Cool</title>
+	<title>Micro-news</title>
 	<meta charset="utf=8"></meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css"></link>

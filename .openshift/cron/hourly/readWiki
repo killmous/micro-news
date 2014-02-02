@@ -1,5 +1,0 @@
-#!/bin/bash
-
-cd ../../../NLP/src/
-killall python
-python readWikipedia.py

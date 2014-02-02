@@ -3,7 +3,6 @@ import json
 import string
 import codecs
 import urllib2
-import HTMLParser
 from bs4 import BeautifulSoup
 
 def readWikipedia():
@@ -22,11 +21,5 @@ def readWikipedia():
             docText = re.sub(r'\[ [0-9]*?(citation needed)? \]', '', doc.strip())
             f.write(codecs.decode(''.join([c for c in docText if c not in ',.\'"[]\\()!?@#$%^&*:;<>/+']).lower(), 'UTF-8').strip())
             f.write(u'\n')
-                
 
-
-i = 1
-while True:
-        readWikipedia()
-        print i
-        i = i + 1
+readWikipedia()
