@@ -17,8 +17,9 @@ class Body
 '<body>
 ' . $navbar->write();
 		$tail = 
-'	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+'
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 ';
 		if( !array_key_exists('p', $headers ) ) {
