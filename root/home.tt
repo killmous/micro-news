@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>Bootstrap</title>
+		<meta charset="utf=8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+		<link rel="stylesheet" href="static/css/bootstrap.min.css"></link>
+	</head>
+	<body style="background-image: url('[% c.uri_for('/static/images/black-wallpaper.jpg') %]')">
+		
+		[% # OK NAVBAR TIME %]
+		<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="[% c.uri_for('/') %]">Bootstrap</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="[% c.uri_for('/') %]?p=home">Home</a>
+						</li>
+						<li>
+							<a href="[% c.uri_for('/') %]?p=about">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		[% # OK HOMEPAGE TIME %]
+		[% IF page == 'home' %]
+		<div class="container" style="padding-top: 5px;">
+			<div class="jumbotron">
+				<h1>Enter two words</h1><br />
+				<form id="simForm" method="post" action="[% c.uri_for('/') %]">
+					<input class="form-control input-lg" type="text" Placeholder="Word 1" name="word1" />
+					<input class="form-control input-lg" type="text" Placeholder="Word 2" name="word2" />
+					<div class="row">
+						<div class="col-md-4">
+							<a class="btn btn-lg btn-primary" onClick="javascript: document.getElementById('simForm').submit();" style="margin-top: 10px;">See Similarity</a>
+						</div>
+						[% IF sim != '' %]
+						<div class="col-md-8">
+							<p>[% sim -%]</p>
+						</div>
+						[% END %]
+					</div>
+				</form>
+			</div>
+		</div>
+
+		[% ELSIF page == 'about' %]
+		<div class="container" style="padding-top: 5px;">
+			<div class="jumbotron">
+				<h1 style="text-align: center;">Micro-news</h1><br />
+				<p>
+Actually, right now it has nothing to do with news. In fact, all it encompasses now is a simple experiment in computational linguistics. And perl. Perl is pretty cool.
+				</p>
+				<p>
+No seriously. Perl is literally the ice cream to my cone, the tit to my tat, the apache to my meteor, the cone to my ice cream.
+				</p>
+			</div>
+		</div>	
+		
+		[% ELSE %]
+		<div class="container">
+			<div class="errormain">
+				<h1>404 Error</h1>
+				<h2>Page not found</h2>
+			</div>
+		</div>
+
+		[% END %]
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+	</body>

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-FILE="../media/wikipedia"
-
-#python readWikipedia.py $FILE".html"
-./backend $FILE".txt" "tony" "the"

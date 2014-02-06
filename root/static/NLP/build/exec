@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd root/static/NLP/build/
+
+FILE="../media/wikipedia"
+
+#python readWikipedia.py $FILE".html"
+./backend $FILE".txt" "$1" "$2"
