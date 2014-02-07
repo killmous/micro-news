@@ -32,8 +32,8 @@
 			<div class="jumbotron">
 				<h1>Enter two words</h1><br />
 				<form id="simForm" method="post" action="[% c.uri_for('/') %]">
-					<input class="form-control input-lg" type="text" Placeholder="Word 1" name="word1" />
-					<input class="form-control input-lg" type="text" Placeholder="Word 2" name="word2" />
+					<input class="form-control input-lg" type="text" Placeholder="Word 1" name="word1" autocomplete="off"/>
+					<input class="form-control input-lg" type="text" Placeholder="Word 2" name="word2" autocomplete="off" />
 					<div class="row">
 						<div class="col-md-4">
 							<a class="btn btn-lg btn-primary" onClick="javascript: document.getElementById('simForm').submit();" style="margin-top: 10px;">See Similarity</a>
@@ -54,9 +54,6 @@
 				<h1 style="text-align: center;">Micro-news</h1><br />
 				<p>
 Actually, right now it has nothing to do with news. In fact, all it encompasses now is a simple experiment in computational linguistics. And perl. Perl is pretty cool.
-				</p>
-				<p>
-No seriously. Perl is literally the ice cream to my cone, the tit to my tat, the apache to my meteor, the cone to my ice cream.
 				</p>
 			</div>
 		</div>	

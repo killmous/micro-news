@@ -47,7 +47,7 @@ sub index :Path :Args(0) {
     		$sim = "Please enter no punctuation.";
     	}
     	else
-    	{
+	{
     		$sim = `$uri "$word1" "$word2"`;
     	}
     }
